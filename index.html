@@ -5,20 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css    ">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="images/de.png">
+  <link rel="shortcut icon" class="icon" href="images/de.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Dtera</title>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg logo" id="navbar">
+  <nav class="navbar navbar-expand-lg logo w-100" id="navbar">
     <div class="container">
       <a class="navbar-brand " href="#">
         <img src="images/FINAL LOGO white.png" alt="" srcset="" width="250px">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-dark"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -32,18 +52,18 @@
             <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Partners">Partners</a>
+            <a class="nav-link" href="#clients">Clients</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header>
+  <header class="header">
 
-   
-      <!-- Navigation -->
-      <!-- <div class="navigation">
+
+    <!-- Navigation -->
+    <!-- <div class="navigation">
         <div class="navigation-left">
           <a href="#">Shoes</a>
           <a href="#">Clothes</a>
@@ -58,339 +78,501 @@
         </div>
       </div> -->
 
-      <!-- Slider Wrapper -->
-      <div class="css-slider-wrapper">
-        <input type="radio" name="slider" class="slide-radio1" hidden checked id="slider_1">
-        <input type="radio" name="slider" class="slide-radio2" hidden id="slider_2">
-        <input type="radio" name="slider" class="slide-radio3" hidden id="slider_3">
-        <input type="radio" name="slider" class="slide-radio4" hidden id="slider_4">
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper">
+      <input type="radio" name="slider" class="slide-radio1" hidden checked id="slider_1">
+      <input type="radio" name="slider" class="slide-radio2" hidden id="slider_2">
+      <input type="radio" name="slider" class="slide-radio3" hidden id="slider_3">
+      <input type="radio" name="slider" class="slide-radio4" hidden id="slider_4">
 
-        <!-- Slider Pagination -->
-        <div class="slider-pagination">
-          <label for="slider_1" class="page1"></label>
-          <label for="slider_2" class="page2"></label>
-          <label for="slider_3" class="page3"></label>
-          <label for="slider_4" class="page4"></label>
+      <!-- Slider Pagination -->
+      <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+        <label for="slider_3" class="page3"></label>
+        <label for="slider_4" class="page4"></label>
+      </div>
+
+      <!-- Slider #1 -->
+      <div class="slider slide-1">
+        <img src="images/header1.png" alt="">
+        <div class="slider-content">
+          <h4>Digital Services</h4>
+          <h2>
+            Detra Welcome to
+            Drive The Era!</h2>
+          <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
-
-        <!-- Slider #1 -->
-        <div class="slider slide-1">
-          <img src="images/header1.png" alt="">
-          <div class="slider-content">
-            <h4>Digital Services</h4>
-            <h2>
-              Detra Welcome to
-              Drive The Era!</h2>
-            <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
-          </div>
-          <div class="number-pagination">
-            <span>1</span>
-          </div>
+        <div class="number-pagination">
+          <span>1</span>
         </div>
+      </div>
 
-        <!-- Slider #2 -->
-        <div class="slider slide-2">
-          <img src="images/header1.png" alt="">
-          <div class="slider-content">
-            <h4>Digital Services</h4>
-            <h2>innovation tecnology</h2>
-            <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
-          </div>
-          <div class="number-pagination">
-            <span>2</span>
-          </div>
+      <!-- Slider #2 -->
+      <div class="slider slide-2">
+        <img src="images/header1.png" alt="">
+        <div class="slider-content">
+          <h4>Digital Services</h4>
+          <h2>innovation tecnology</h2>
+          <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
-
-        <!-- Slider #3 -->
-        <div class="slider slide-3">
-          <img src="images/model-3.png" alt="">
-          <div class="slider-content">
-            <h4>Digital Services</h4>
-            <h2>we offer our services for business</h2>
-            <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
-          </div>
-          <div class="number-pagination">
-            <span>3</span>
-          </div>
+        <div class="number-pagination">
+          <span>2</span>
         </div>
+      </div>
 
-       
+      <!-- Slider #3 -->
+      <div class="slider slide-3">
+        <img src="images/model-3.png" alt="">
+        <div class="slider-content">
+          <h4>Digital Services</h4>
+          <h2>we offer our services for business</h2>
+          <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
+        </div>
+        <div class="number-pagination">
+          <span>3</span>
+        </div>
+      </div>
+
+
   </header>
 
   <main>
-    <section class="services" id="services" style="height: 1500px;">
 
-      <section class="we-offer" id="whatweARe">
+    <section class="services" id="services">
+
+      <!-- Service Start -->
+      <div class="container-xxl service py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="d-flex align-items-start tab-wrap">
-                        <div class="nav flex-column nav-pills me-3 left-part aos-init aos-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="200">
-                            <h2>
-                              services
-                            </h2>
-                            
-                            <button class="nav-link active" id="v-pills-1" data-bs-toggle="pill" data-bs-target="#v-pills-a" type="button" role="tab" aria-controls="v-pills-a" aria-selected="true"><i class="fi-blocks"></i><span> View all</span>
-                            </button>
-                            <button class="nav-link" id="v-pills-2" data-bs-toggle="pill" data-bs-target="#v-pills-b" type="button" role="tab" aria-controls="v-pills-b" aria-selected="false"><i class="fi-web"></i> <span> Management consultancy</button>
-                            <button class="nav-link" id="v-pills-3" data-bs-toggle="pill" data-bs-target="#v-pills-c" type="button" role="tab" aria-controls="v-pills-c" aria-selected="false"><i class="fi-mobile"></i> <span>Software Development</span>
-                            </button>
-                            <button class="nav-link" id="v-pills-4" data-bs-toggle="pill" data-bs-target="#v-pills-d" type="button" role="tab" aria-controls="v-pills-d" aria-selected="false"><i class="fi-ux"></i> <span>Digital marketing</span>
-                            </button>
-                            <!-- <button class="nav-link" id="v-pills-5" data-bs-toggle="pill" data-bs-target="#v-pills-e" type="button" role="tab" aria-controls="v-pills-e" aria-selected="false"><i class="fi-strategy"></i> <span>Web Strategy &amp;
-                                    Consultancy</span> </button> -->
+          <div class="title-text text-center">
+            <h1>Services</h1>
+          </div>
+          <div class="row g-4 wow fadeInUp ser" data-wow-delay="0.3s">
 
-                        </div>
-                        <div class="tab-content right-part" id="v-pills-tabContent">
+            <div class="col-lg-3">
+              <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                  data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                  <h5 class="m-0"><i class="fa-solid fa-list-check me-2"></i> Management consultancy</h5>
+                </button>
+                <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                  data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                  <h5 class="m-0"><i class="fa-solid fa-code me-2"></i> Software Development</h5>
+                </button>
+                <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                  data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                  <h5 class="m-0"><i class="fa-solid fa-photo-film me-2"></i> Digital marketing</h5>
+                </button>
 
-                            <div class="tab-pane fade show active" id="v-pills-a" role="tabpanel" aria-labelledby="v-pills-1">
-                                <ul>
-                                    <li>
-                                        <a href="" style="pointer-events: none;" class="box disabled aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="400">
-                                            <div class="icon-box">
-                                                <img src="images/svg/undraw_data_input_fxv2.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                               
-                                            </div>
-                                            <h3>Management consultancy</h3>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" style="pointer-events: none;" class="box aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="500">
-                                            <div class="icon-box">
-                                                <img src="images/svg/undraw_programming_re_kg9v.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                             
-                                            </div>
-                                            <h3>Software Development</h3>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                            <div class="icon-box">
-                                                <img src="images/svg/undraw_marketing_re_7f1g.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                                
-                                            </div>
-                                            <h3>Digital marketing</h3>
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
-
-
-                            </div>
-
-                            <div class="tab-pane fade" id="v-pills-b" role="tabpanel" aria-labelledby="v-pills-2">
-                              <ul>
-                                <li>
-                                    <a href="" style="pointer-events: none;" class="box disabled aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="400">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Feasibility study.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                           
-                                        </div>
-                                        <h3>Feasibility study</h3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" style="pointer-events: none;" class="box aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="500">
-                                        <div class="icon-box">
-                                            <img src="images/svg/undraw_programming_re_kg9v.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                         
-                                        </div>
-                                        <h3>BMC (Bussiness Model Canvas) building</h3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Competitor analysis.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                            
-                                        </div>
-                                        <h3>Competitor analysis</h3>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                              
-                                <!-- <div class="disc-box">
-                                    <img src="assets/images/web.png" alt="web" data--h-bstatus="4PROCESSING">
-                                    <h4>Web Design and Development</h4>
-                                    <h3>Delivering successful stories one at a time</h3>
-                                    <p>
-                                        Our expert team specializes in creating stunning, user-friendly websites that elevate your digital presence. From sleek layouts to seamless functionality, we bring your vision to life, ensuring a compelling online presence that captivates and engages your audience.
-                                    </p>
-                                    <!-- <div class="action-wrap">
-                                        <a href="#" class="get-quote">Get a free quote</a>
-                                        <a href="#" class="know-process">Know our process <i
-                                                class="fi-arrow-thick-right"></i></a>
-                                    </div> 
-                                </div> -->
-
-
-                            </div>
-
-                            <div class="tab-pane fade" id="v-pills-c" role="tabpanel" aria-labelledby="v-pills-3">
-
-                              <ul>
-                                <li>
-                                    <a href="" style="pointer-events: none;" class="box disabled aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="400">
-                                        <div class="icon-box">
-                                            <img src="images/svg/SaaS development.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                           
-                                        </div>
-                                        <h3>SaaS development</h3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" style="pointer-events: none;" class="box aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="500">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Mobile Applications.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                        </div>
-                                        <h3>Mobile Applications</h3>
-                                        
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Website development.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                            
-                                        </div>
-                                        <h3>Website development</h3>
-                                    </a>
-                                </li> 
-
-                                <li>
-                                  <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                      <div class="icon-box">
-                                          <img src="images/svg/Web Hosting.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                          
-                                      </div>
-                                      <h3>Web Hosting</h3>
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                      <div class="icon-box">
-                                          <img src="images/svg/Web Hosting.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                          
-                                      </div>
-                                      <h3>Government websites</h3>
-                                  </a>
-                                </li>
-
-
-                               
-                              </ul>
-
-                                <!-- <div class="disc-box">
-                                    <img src="assets/images/web.png" alt="web" data--h-bstatus="4PROCESSING">
-                                    <h4>Mobile Apps</h4>
-                                    <h3>Maximize your audience reach </h3>
-                                    <p>
-                                        Empower your business with cutting-edge mobile applications designed to enhance user engagement and drive growth. Our killed team creates intuitive mobile apps tailored to your unique requirements. Whether it's iOS, Android, or cross-platform development, we got you covered.
-                                    </p>
-                                    <!-- <div class="action-wrap">
-                                        <a href="#" class="get-quote">Get a free quote</a>
-                                        <a href="#" class="know-process">Know our process <i
-                                                class="fi-arrow-thick-right"></i></a>
-                                    </div> 
-                                </div> -->
-                            </div>
-
-                            <div class="tab-pane fade" id="v-pills-d" role="tabpanel" aria-labelledby="v-pills-4">
-
-                              <ul>
-                                <li>
-                                    <a href="" style="pointer-events: none;" class="box disabled aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="400">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Manage social media accounts.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                           
-                                        </div>
-                                        <h3>Manage social media accounts</h3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" style="pointer-events: none;" class="box aos-init aos-animate" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="500">
-                                        <div class="icon-box">
-                                            <img src="images/svg/Content creation.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                        </div>
-                                        <h3>Content creation</h3>
-                                    </a>
-                                </li>
-
-                                <li>
-                                  <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                      <div class="icon-box">
-                                          <img src="images/svg/Design posts and reels.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                          
-                                      </div>
-                                      <h3>Design posts and reels</h3>
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="#" class="box aos-init aos-animate" style="pointer-events: none;" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="300" data-aos-delay="600">
-                                      <div class="icon-box">
-                                          <img src="images/svg/⁠Manage marketing campaigns.svg" alt="bg" class="offer-bg" data--h-bstatus="4PROCESSING">
-                                          
-                                      </div>
-                                      <h3>⁠Manage marketing campaigns</h3>
-                                  </a>
-                                </li>
-
-
-                               
-                              </ul>
-
-
-                                <!-- <div class="disc-box">
-                                    <img src="assets/images/web.png" alt="web" data--h-bstatus="4PROCESSING">
-                                    <h4>UX/UI Implementation</h4>
-                                    <h3>Elevating user Experience through intuitive design</h3>
-                                    <p>
-                                        At Future Internet we understand the importance of user experience and user interface to achieve great websites. We combine years of experience and knowledge in governmental guidelines such as DLS 2.0 to consult and deliver visually stunning and user-friendly interfaces that delight users and drive engagement.
-                                    </p>
-                                    <!-- <div class="action-wrap">
-                                        <a href="#" class="get-quote">Get a free quote</a>
-                                        <a href="#" class="know-process">Know our process <i
-                                                class="fi-arrow-thick-right"></i></a>
-                                    </div> 
-                                </div> -->
-
-                            </div>
-
-                            <div class="tab-pane fade" id="v-pills-e" role="tabpanel" aria-labelledby="v-pills-4">
-                                <div class="disc-box">
-                                    <img src="assets/images/web.png" alt="web" data--h-bstatus="4PROCESSING">
-                                    <h4>Web Strategy &amp; Consultancy</h4>
-                                    <h3>Unlock the full potential of your online presence</h3>
-                                    <p>
-                                        Our experts analyze your goals, audience, and market trends to provide a comprehensive plan that boosts your digital presence. From UX/UI consultancy, content strategy and technology, we provide recommendations to help you achieve your online objectives efficiently and effectively.
-                                    </p>
-                                    <!-- <div class="action-wrap">
-                                        <a href="#" class="get-quote">Get a free quote</a>
-                                        <a href="#" class="know-process">Know our process <i
-                                                class="fi-arrow-thick-right"></i></a>
-                                    </div> -->
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+
+            <div class="col-lg-9">
+              <div class="tab-content w-100">
+
+                <div class="tab-pane fade show active d-flex flex-row flex-wrap" id="tab-pane-1">
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/flash.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Feasibility study</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Comprehensive feasibility study services for digital ventures.
+
+
+                           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/business-model.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>BMC building</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Expert BMC construction for optimized digital ventures and sustainable business growth.                </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/data.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Competitor analysis</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Strategic competitor analysis for informed decision-making and market advantage in digital landscapes           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+
+
+
+                </div>
+
+                <div class="tab-pane fade d-flex flex-wrap" id="tab-pane-2">
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/flash.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>SaaS development</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Tailored SaaS development empowering digital transformation and scalability for businesses worldwide.
+
+
+                           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/business-model.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>BMC building</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Expert BMC construction for optimized digital ventures and sustainable business growth.                </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/data.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Competitor analysis</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Strategic competitor analysis for informed decision-making and market advantage in digital landscapes           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+
+
+
+                </div>
+
+
+                <div class="tab-pane fade d-flex flex-wrap" id="tab-pane-3">
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/flash.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Feasibility study</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Comprehensive feasibility study services for digital ventures.
+
+
+                           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/business-model.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>BMC building</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Expert BMC construction for optimized digital ventures and sustainable business growth.                </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+                          <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                              <img src="images/svg/data.png" alt="">
+                            </div>
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Competitor analysis</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                           <p>Strategic competitor analysis for informed decision-making and market advantage in digital landscapes           </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+               
+                <!-- <div class="tab-pane fade" id="tab-pane-4">   
+
+                  <div class="row g-4">
+                    <div class="col-md-6" style="min-height: 350px;">
+                      <div class="position-relative h-100">
+                        <img class="position-absolute rounded w-100 h-100" src="img/service-4.jpg"
+                          style="object-fit: cover;" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
+                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                        clita duo justo erat amet.</p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                      <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+                 -->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Service End -->
+
     </section>
 
 
+    <section id="clients" class="clients clients">
+
+      <div class="container">
+
+        <div class="title-text text-center">
+          <h1> Partners</h1>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/logo_footer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+          </div>
+
+        </div>
+
+      </div>
+
+      
     </section>
 
+   
+    <section class="Approach" id="Approach">
+      <div class="container">
+
+        <div class="title-text text-center">
+          <h1>Our Approach</h1>
+        </div>
+
+        <div class="row">
+
+         
+
+          <div class="col-md-5 order-md-2">
+            <div class="options-img">
+              <img src="images/approch.png" alt="" style="width: 100%;">
+            </div>
+          </div>
+
+          <div class="col-md-7 order-md-1">
+            <div class="options">
+
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="images/svg/check-list.png" alt="">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5>01. Assessment </h5>
+                  <p>Nice to meet you! Lets talk and get to know your needs and context.
+                  </p>
+
+
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="images/svg/strategy.png" alt="">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5>02. Strategy </h5>
+                  <p>Clarify what matters: your objectives, your value proposition, your unique advantage.
+                  </p>
+
+
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="images/svg/writing.png" alt="">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5>03. Definition </h5>
+                  <p>Turn your idea into a plan: define user flows, the product architecture, and tech needs.
+                  </p>
+
+
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="images/svg/design-thinking.png" alt="">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5>04. Design </h5>
+                  <p>Get your first prototype. We wll wireframe and then fully design an interactive prototype.</p>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </section>
-    <section class="Approach" id="Approach" style="height: 1500px; padding-top: 500px;"></section>
-    <section class="Portfolio" id="Portfolio" style="height: 1500px; padding-top: 500px;"></section>
-    <section class="Partners" id="Partners" style="height: 1500px; padding-top: 500px;"></section>
+
+    
+
+    <section class="Portfolio" id="Portfolio"></section>
+
+   
+
+
+   
+    <section id="consultation">
+      <div class="container padding-medium">
+        <div class="row align-items-center">
+          <div class="offset-md-1 col-md-5 ">
+            <div>
+              <h2 class=" fw-semibold">
+                We help startups convert their potential ideas into profitable realities.
+                
+                 </h2>
+              <p class="text-secondary ">GO Ahead to drive the era.</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form id="form">
+              <input type="email" name="email" placeholder="Write Your Email Address*"
+                class="form-control bg-white border-0 rounded-4 shadow-none rounded-pill text-center px-4 py-3 w-100 mb-4">
+              <div class="d-grid">
+                <button class="btn btn-primary px-5 py-3"> Get Free Consultaion</button>
+              </div>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+    
   </main>
 
   <footer></footer>
@@ -398,6 +580,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
   <script src="js/js.js"></script>
 
 </body>
