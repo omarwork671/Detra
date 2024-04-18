@@ -461,10 +461,11 @@ nav.navbar .navbar-brand img{
     }
 
     .slider .buy-now-btn{
-      font-size: 14px;
+      font-size: 16px;
       padding: 7px 7px;
       width: 200px;
       height: 50px;
+      font-weight: 700;
     }
 
     header{
@@ -1375,16 +1376,16 @@ text-transform: uppercase;
   top: 6px;
   left: 6px;
   border-radius: 16px;
-  background: #b80000;
+  background: #5C00AD;
   transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
-  border-color: #b80000;
+  border-color: #5C00AD;
 }
 
 .testimonial-carousel .owl-dot.active::after {
-  background: #b80000;
+  background: #5C00AD;
 }
 
 .btn-square, .btn-sm-square, .btn-lg-square {
@@ -1396,7 +1397,7 @@ text-transform: uppercase;
 }
 
 .testimonial-carousel i {
-  color: #b80000 !important;
+  color: #5C00AD !important;
 
 }
 
