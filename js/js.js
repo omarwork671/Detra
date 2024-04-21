@@ -90,3 +90,79 @@ const swiper = new Swiper('.swiper', {
 
 
 })(jQuery);
+
+
+
+/* Porfolio isotope and filter
+*/
+$('.portfolio-container'). isotope({
+  itemSelector: '.portfolio-item',
+  layoutMode: 'fitRows'
+});
+$('.portfolio ul li').click(function(){
+  $('.portfolio ul li').removeClass('filter-active');
+  $(this).addClass('filter-active');
+
+  var selector = $(this).attr('data-filter');
+  $('.portfolio-container').isotope({
+    filter:selector
+  });
+  return false;
+});
+
+
+
+
+
+
+
+/**
+* Initiate portfolio lightbox 
+*/
+const portfolioLightbox = GLightbox({
+ selector: '.portfokio-lightbox'
+});
+
+
+
+
+
+
+/**
+   * Back to top button
+   */
+let backtotop = querySelector ('.back-to-top')
+if (backtotop) {
+  const toggleBacktotop = () => {
+    if (window.scrollY > 100) {
+      backtotop.classList.add('active')
+    } else {
+      backtotop.classList.remove('active')
+    }
+  }
+  window.addEventListener('load', toggleBacktotop)
+  .addEventListener(document, toggleBacktotop)
+}
+
+
+
+
+
+
+  /**
+   * Initiate  Counter 
+   */
+ window.onload = function(){
+  let website = new CountUp('website-count', 0, 90,0,2.5);
+  website.start();
+
+  let app = new CountUp('app-count', 0, 90,0,2.5);
+  app.start();
+
+  let client = new CountUp('client-count', 0, 90,0,2.5);
+  client.start();
+
+  let Campagin = new CountUp('Campagin-count', 0, 90,0,2.5);
+  Campagin.start();
+ }
+ 
