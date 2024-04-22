@@ -131,7 +131,7 @@ const portfolioLightbox = GLightbox({
 /**
    * Back to top button
    */
-let backtotop = querySelector ('.back-to-top')
+let backtotop = document.querySelector('.back-to-top')
 if (backtotop) {
   const toggleBacktotop = () => {
     if (window.scrollY > 100) {
@@ -149,20 +149,3 @@ if (backtotop) {
 
 
 
-  /**
-   * Initiate  Counter 
-   */
- window.onload = function(){
-  let website = new CountUp('website-count', 0, 90,0,2.5);
-  website.start();
-
-  let app = new CountUp('app-count', 0, 90,0,2.5);
-  app.start();
-
-  let client = new CountUp('client-count', 0, 90,0,2.5);
-  client.start();
-
-  let Campagin = new CountUp('Campagin-count', 0, 90,0,2.5);
-  Campagin.start();
- }
- 
