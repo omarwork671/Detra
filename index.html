@@ -28,7 +28,92 @@
   <link rel="stylesheet" href="css/glightbox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Floating Social Media Bar Style Starts Here */
 
+    .socail-icons {
+      width: 70px;
+      margin-top: 150px;
+      transition: all 0.3s linear;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+    }
+
+    .socail-icons li {
+      position: relative;
+      height: 60px;
+    }
+
+    .socail-icons li a {
+      display: block;
+      color: white;
+      height: 100%;
+      width: 100%;
+      line-height: 60px;
+      padding-left: 25%;
+      border-bottom: 1px solid rgba(0, 0, 0, .4);
+      transition: all .3s linear;
+      text-decoration: none;
+
+    }
+
+    .socail-icons li:nth-child(1) a {
+      background: #4267B2;
+    }
+
+    .socail-icons li:nth-child(2) a {
+      background: #1DA1F2;
+    }
+
+    .socail-icons li:nth-child(3) a {
+      background: #E1306C;
+    }
+
+    .socail-icons li:nth-child(4) a {
+      background: #2867B2;
+    }
+
+    .socail-icons li:nth-child(5) a {
+      background: #333;
+    }
+
+    .socail-icons li:nth-child(6) a {
+      background: #ff0000;
+    }
+
+    .socail-icons li a i {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      font-size: 27px;
+    }
+
+    .socail-icons ul li a span {
+      display: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .socail-icons a:hover {
+      z-index: 1;
+      width: 200px;
+      border-bottom: 1px solid rgba(0, 0, 0, .5);
+      box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    }
+
+    .socail-icons ul li:hover a span {
+      padding-left: 30%;
+    }
+
+
+
+
+    /* Floating Social Media Bar Style Ends Here */
+
+    .clients .owl-stage {
+      cursor: pointer !important;
+    }
+  </style>
 
 </head>
 
@@ -36,7 +121,7 @@
 
   <nav class="navbar navbar-expand-lg logo w-100" id="navbar">
     <div class="container">
-      <a class="navbar-brand " href="#">
+      <a class="navbar-brand" href="#">
         <img src="images/FINAL LOGO white.png" alt="" srcset="" width="250px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,17 +131,32 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#services">services </a>
+            <a class="nav-link" href="#About-Us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Approach">Approach</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#clients">Clients</a>
+            <a class="nav-link" href="#Testimonial">Testimonial</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+
+          <a href="indexAr.html">
+            <li class="nav-item">
+              <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span onclick="changeURL()" class="off">Ar</span>
+                <span class="on">EN</span>
+              </div>
+            </li>
+          </a>
+
         </ul>
       </div>
     </div>
@@ -102,7 +202,7 @@
         <div class="slider-content">
           <h4>Digital Services</h4>
           <h2>
-            Detra Welcome to
+            Welcome to Detra
             Drive The Era!</h2>
           <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
@@ -116,7 +216,7 @@
         <img src="images/header1.png" alt="">
         <div class="slider-content">
           <h4>Digital Services</h4>
-          <h2>innovation tecnology</h2>
+          <h2>Innovation Technology</h2>
           <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
         <div class="number-pagination">
@@ -130,8 +230,7 @@
         <div class="slider-content">
           <h4>Digital Services</h4>
           <h2>
-            Detra Welcome to
-            Drive The Era!</h2>
+            Leading the Charge in Digital Evolution</h2>
           <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
         <div class="number-pagination">
@@ -144,8 +243,7 @@
         <div class="slider-content">
           <h4>Digital Services</h4>
           <h2>
-            Detra Welcome to
-            Drive The Era!</h2>
+            Detra: Where Technology Transforms the Future</h2>
           <button type="button" class="buy-now-btn" name="button">Free Consultaion</button>
         </div>
         <div class="number-pagination">
@@ -158,7 +256,10 @@
 
   <main>
 
-    <section id="about" class="about">
+
+
+    <!-- ======= About-Us Section ======= -->
+    <section id="About-Us" class="about">
 
       <!-- About Start -->
       <div class="container-xxl py-sm-1">
@@ -171,7 +272,8 @@
               <!-- <div class="title-text text-center">
                 <h1>About Us</h1>
               </div> -->
-              <h1 class="display-5 mb-4 about-tit">We Help Our Clients To Grow Their Business</h1>
+              <!--edit here-->
+              <h1 class="display-5 mb-4 about-tit">Facilitating Business Growth for Our Clients</h1>
               <p class="mb-4">
                 DTera was founded with the mission to help businesses of
                 all sizes achieve their goals through technology.
@@ -192,12 +294,14 @@
 
                   <div class="tab-pane fade show active" id="nav-mission" role="tabpanel"
                     aria-labelledby="nav-mission-tab">
+                    <!--edit here-->
                     <p>We work closely with our clients to ensure that we
                       develop software solutions that meet their specific needs
                       and help them achieve their objectives.</p>
                   </div>
 
                   <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                    <!--edit here-->
                     <p>Every business has unique needs, and we take the
                       time to listen to our clients and understand their
                       goals.
@@ -218,8 +322,9 @@
                       <i class="fa fa-times text-white"></i>
                     </div>
                     <div class="ps-3">
-                      <h4>No Hidden Cost</h4>
-                      <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                      <!--edit here-->
+                      <h4>Competitive prices</h4>
+                      <span>delivering excellence without the premium cost</span>
                     </div>
                     <div class="border-end d-none d-lg-block"></div>
                   </div>
@@ -233,8 +338,9 @@
                       <i class="fa fa-users text-white"></i>
                     </div>
                     <div class="ps-3">
+                      <!--edit here-->
                       <h4>Dedicated Team</h4>
-                      <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                      <span>a team fully invested in your project's success.</span>
                     </div>
                     <div class="border-end d-none d-lg-block"></div>
                   </div>
@@ -248,8 +354,9 @@
                       <i class="fa fa-phone text-white"></i>
                     </div>
                     <div class="ps-3">
+                      <!--edit here-->
                       <h4>24/7 Available</h4>
-                      <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                      <span>access to support whenever you need it, 24/7</span>
                     </div>
                   </div>
                 </div>
@@ -261,8 +368,10 @@
       <!-- About End -->
 
     </section>
+    <!-- End About-Us Section -->
 
 
+    <!-- ======= Services Section ======= -->
     <section class="services" id="services">
 
       <!-- Service Start -->
@@ -273,7 +382,7 @@
           </div>
           <div class="row g-4 wow fadeInUp ser align-items-center" data-wow-delay="0.3s">
 
-            <div class="col-lg-3 mt-sm-0" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-lg-3 mt-sm-0 ser-pan-sm" data-aos="fade-right" data-aos-duration="1000">
               <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
                 <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
                   data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
@@ -295,9 +404,9 @@
             <div class="col-lg-9" data-aos="fade-left" data-aos-duration="1000">
               <div class="tab-content w-100">
 
-                <div class="tab-pane fade show active d-flex flex-row flex-wrap" id="tab-pane-1">
+                <div class="tab-pane fade show active d-flex  flex-wrap" id="tab-pane-1">
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-6 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
@@ -311,6 +420,7 @@
                               <h5>Feasibility study</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
                             <p>Feasibility studies for digital ventures evaluate technical, financial, and operational
                               aspects, ensuring viability.
@@ -323,7 +433,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-6 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
@@ -336,6 +446,7 @@
                               <h5>BMC building</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
                             <p>Expert BMC construction for optimized digital ventures and sustainable business growth.
                             </p>
@@ -345,7 +456,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-12 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
@@ -361,6 +472,7 @@
                             </div>
                           </div>
                           <div class="ser-desc">
+                            <!--edit here-->
                             <p>Strategic competitor analysis for informed decision-making and market advantage in
                               digital landscapes </p>
                           </div>
@@ -376,23 +488,31 @@
 
                 </div>
 
-                <div class="tab-pane fade d-flex flex-wrap service-tab-pan service-tab-pan" id="tab-pane-2">
+                <div class="tab-pane fade d-flex flex-wrap service-tab-pan flex-row" id="tab-pane-2">
 
-                  <div class="col-md col-sm-12">
+
+
+
+
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/saas.png" alt="">
+                          </div>
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/flash.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
                               <h5>SaaS development</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
-                            <p>Tailored SaaS development empowering digital transformation and scalability for
-                              businesses worldwide.
+                            <p>Transform your software idea into a scalable and secure
+                              cloud-based SAAS solution with our expert development
+                              services.
 
 
                             </p>
@@ -402,20 +522,23 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/mobile-application.png" alt="">
+                          </div>
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/business-model.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
-                              <h5>BMC building</h5>
+                              <h5>Mobile Applications</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
-                            <p>Expert BMC construction for optimized digital ventures and sustainable business growth.
+                            <p>Crafting innovative mobile apps tailored to your needs. From concept to launch, we bring
+                              your vision to life.
                             </p>
                           </div>
                         </div>
@@ -423,26 +546,108 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/web.png" alt="">
+                          </div>
+
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/data.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
-                              <h5>Competitor analysis</h5>
+                              <h5>Web development</h5>
                             </div>
                           </div>
                           <div class="ser-desc">
-                            <p>Strategic competitor analysis for informed decision-making and market advantage in
-                              digital landscapes </p>
+                            <!--edit here-->
+                            <p>Building dynamic websites that captivate and engage. Elevate your online presence with
+                              our bespoke web development solutions. </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/cloud-server.png" alt="">
+                          </div>
+
+                          <div class="widget-49-title-wrapper">
+
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Hosting & Doamin</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                            <!--edit here-->
+                            <p>Reliable hosting and domain solutions for seamless online presence. Secure, fast, and
+                              tailored to your needs. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/online-shop.png" alt="">
+                          </div>
+
+                          <div class="widget-49-title-wrapper">
+
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>E-COMMERCE</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                            <!--edit here-->
+                            <p>Powerful e-commerce solutions tailored for success. From storefront design to secure
+                              payment gateways, we create the perfect online shopping experience. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/portal.png" alt="">
+                          </div>
+
+                          <div class="widget-49-title-wrapper">
+
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Educational Platforms</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                            <!--edit here-->
+                            <p>Elevate education with our dynamic platforms. Empowering seamless learning experiences
+                              for all. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
 
 
 
@@ -454,20 +659,27 @@
 
                 <div class="tab-pane fade d-flex flex-wrap service-tab-pan" id="tab-pane-3">
 
-                  <div class="col-md col-sm-12">
+
+
+
+
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/content.png" alt="">
+                          </div>
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/flash.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
-                              <h5>Feasibility study</h5>
+                              <h5>Manage social media accounts</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
-                            <p>Comprehensive feasibility study services for digital ventures.
+                            <p>"Streamline your social media presence. We handle posting, engagement, and growth strategies for you."
 
 
                             </p>
@@ -477,20 +689,23 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/creative-writing.png" alt="">
+                          </div>
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/business-model.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
-                              <h5>BMC building</h5>
+                              <h5>Content creation</h5>
                             </div>
                           </div>
+                          <!--edit here-->
                           <div class="ser-desc">
-                            <p>Expert BMC construction for optimized digital ventures and sustainable business growth.
+                            <p>Drive engagement with our content creation service. We craft compelling, tailored content
+                              to elevate your brand.
                             </p>
                           </div>
                         </div>
@@ -498,53 +713,95 @@
                     </div>
                   </div>
 
-                  <div class="col-md col-sm-12">
+                  <div class="col-md-4 col-sm-12">
                     <div class="card card-margin">
                       <div class="card-body ">
                         <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/ux.png" alt="">
+                          </div>
+
                           <div class="widget-49-title-wrapper">
-                            <div class="widget-49-date-primary">
-                              <img src="images/svg/data.png" alt="">
-                            </div>
+
                             <div class="widget-49-meeting-info ser-tit">
-                              <h5>Competitor analysis</h5>
+                              <h5>Design posts and reels</h5>
                             </div>
                           </div>
                           <div class="ser-desc">
-                            <p>Strategic competitor analysis for informed decision-making and market advantage in
-                              digital landscapes </p>
+                            <!--edit here-->
+                            <p>Elevate your online presence with our expertly designed posts and reels. Engaging visuals
+                              that captivate your audience and amplify your brand. </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
 
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/post.png" alt="">
+                          </div>
 
-                <!-- <div class="tab-pane fade" id="tab-pane-4">   
+                          <div class="widget-49-title-wrapper">
 
-                  <div class="row g-4">
-                    <div class="col-md-6" style="min-height: 350px;">
-                      <div class="position-relative h-100">
-                        <img class="position-absolute rounded w-100 h-100" src="img/service-4.jpg"
-                          style="object-fit: cover;" alt="">
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Manage marketing campaigns</h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                            <!--edit here-->
+                            <p>Maximize your reach with our expert campaign management. From strategic planning to
+                              execution, we ensure your message resonates with your audience, driving results. </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                        clita duo justo erat amet.</p>
-                      <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                      <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                      <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                      <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12">
+                    <div class="card card-margin">
+                      <div class="card-body ">
+                        <div class="widget-49">
+
+                          <div class="widget-49-date-primary">
+                            <img src="images/services/photography.png" alt="">
+                          </div>
+
+                          <div class="widget-49-title-wrapper">
+
+                            <div class="widget-49-meeting-info ser-tit">
+                              <h5>Product & event photography </h5>
+                            </div>
+                          </div>
+                          <div class="ser-desc">
+                            <!--edit here-->
+                            <p>Capture moments that tell your story. Our professional product and event photography
+                              service ensures your brand and events shine with stunning imagery. </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+
+
+
+
+
+
+
                 </div>
 
-                 -->
+
+
+
+
+
               </div>
             </div>
           </div>
@@ -553,11 +810,11 @@
       <!-- Service End -->
 
     </section>
+    <!-- End Services Section -->
 
 
-
-
-    <section id="clients" class="clients clients">
+    <!-- ======= Partners Section ======= -->
+    <section id="Partners" class="clients">
 
       <div class="container ">
 
@@ -565,31 +822,109 @@
           <h1> Partners</h1>
         </div>
 
-        <div class="row" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div id="owl-demo" class="owl-carousel owl-theme" data-aos="zoom-in-up" data-aos-duration="1000">
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/google-logo-png-hd-11.png" class="img-fluid" alt="">
+          <a href="https://www.dubaichamber.com/ar/home/" target="_blank">
+            <div class="item">
+              <img src="images/logos/1.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+
+          <a href="https://www.techstars.com/" target="_blank">
+            <div class="item ">
+              <img src="images/logos/2.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <div class="item ">
+            <img src="images/logos/3.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/Saudi_Aramco_logo.png" class="img-fluid" alt="">
+          <a href="https://www.gitex.com/" target="_blank">
+            <div class="item">
+              <img src="images/logos/4.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a
+            href="https://www.ajman.ac.ae/en/cba/news/2019/ajman-universitys-professors-shared-their-views-on-artificial-intelligence-at-the-ai-exhibition-2019">
+            <div class="item">
+              <img src="images/logos/5.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+
+          <a href="https://sheraa.ae/ar/" target="_blank">
+            <div class="item">
+              <img src="images/logos/6.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://gsea.org/" target="_blank">
+            <div class="item">
+              <img src="images/logos/7.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://www.ieee.org/" target="_blank">
+            <div class="item">
+              <img src="images/logos/8.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <div class="item">
+            <img src="images/logos/9.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/Microsoft-Logo.png" class="img-fluid" alt="">
-          </div>
+          <a href="https://www.ruwad.ae/ar/web/sedd/home" target="_blank">
+            <div class="item">
+              <img src="images/logos/10.png" class="img-fluid" alt="">
+            </div>
+          </a>
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/Microsoft-Logo.png" class="img-fluid" alt="">
-          </div>
+          <a href="https://www.moec.gov.ae/" target="_blank">
+            <div class="item">
+              <img src="images/logos/11.png" class="img-fluid" alt="">
+            </div>
+          </a>
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/Microsoft-Logo.png" class="img-fluid" alt="">
-          </div>
+          <a href="https://career.maan.gov.ae/ar/" target="_blank">
+            <div class="item">
+              <img src="images/logos/12.png" class="img-fluid" alt="">
+            </div>
+          </a>
 
-          <div class="col-lg-2 col-md-4 col-6 ">
-            <img src="images/logos/Microsoft-Logo.png" class="img-fluid" alt="">
-          </div>
+          <a href="https://www.du.ae/ar/personal" target="_blank">
+            <div class="item">
+              <img src="images/logos/13.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://www.expo2020dubai.com/" target="_blank">
+            <div class="item">
+              <img src="images/logos/14.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://mcy.gov.ae/ar/" target="_blank">
+            <div class="item">
+              <img src="images/logos/15.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://arabexcellence.org/" target="_blank">
+            <div class="item">
+              <img src="images/logos/16.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
+          <a href="https://www.worldgovernmentsummit.org/" target="_blank">
+            <div class="item">
+              <img src="images/logos/17.png" class="img-fluid" alt="">
+            </div>
+          </a>
+
 
         </div>
 
@@ -599,9 +934,10 @@
 
 
     </section>
+    <!-- End Services Section -->
 
 
-
+    <!-- ======= Approach Section ======= -->
     <section class="Approach" id="Approach">
       <div class="container">
 
@@ -626,9 +962,12 @@
                 <div class="flex-shrink-0">
                   <img src="images/svg/check-list.png" alt="">
                 </div>
+                <!--edit here-->
                 <div class="flex-grow-1 ms-2">
-                  <h5>01. Assessment </h5>
-                  <p>Nice to meet you! Lets talk and get to know your needs and context.
+                  <h5>01. Initial Consultation:
+                  </h5>
+                  <p>Understand your unique needs and goals to tailor our services effectively.
+
                   </p>
 
 
@@ -639,9 +978,10 @@
                 <div class="flex-shrink-0">
                   <img src="images/svg/strategy.png" alt="">
                 </div>
+                <!--edit here-->
                 <div class="flex-grow-1 ms-2">
-                  <h5>02. Strategy </h5>
-                  <p>Clarify what matters: your objectives, your value proposition, your unique advantage.
+                  <h5>02. Strategic Planning: </h5>
+                  <p>Develop a customized strategy aligned with your objectives and market trends.
                   </p>
 
 
@@ -652,9 +992,12 @@
                 <div class="flex-shrink-0">
                   <img src="images/svg/writing.png" alt="">
                 </div>
+                <!--edit here-->
                 <div class="flex-grow-1 ms-2">
-                  <h5>03. Definition </h5>
-                  <p>Turn your idea into a plan: define user flows, the product architecture, and tech needs.
+                  <h5>03. Creative Execution:
+                  </h5>
+                  <p>Implement innovative solutions with captivating design and seamless functionality.
+
                   </p>
 
 
@@ -665,9 +1008,12 @@
                 <div class="flex-shrink-0">
                   <img src="images/svg/design-thinking.png" alt="">
                 </div>
+                <!--edit here-->
                 <div class="flex-grow-1 ms-2">
-                  <h5>04. Design </h5>
-                  <p>Get your first prototype. We wll wireframe and then fully design an interactive prototype.</p>
+                  <h5>04. Continuous Support:
+                  </h5>
+                  <p>Provide ongoing maintenance and support to ensure your digital success.
+                  </p>
 
 
                 </div>
@@ -680,9 +1026,11 @@
         </div>
       </div>
     </section>
+    <!-- End Approach Section -->
+
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Portfolio" class="portfolio" data-aos="fade-up" data-aos-duration="1000">
 
       <div class="container">
 
@@ -697,9 +1045,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Apps</li>
+              <li data-filter=".filter-card">Websites</li>
+              <li data-filter=".filter-web">Campagins</li>
             </ul>
           </div>
         </div>
@@ -850,33 +1198,7 @@
 
 
 
-
-    <section id="consultation">
-      <div class="container padding-medium">
-        <div class="row align-items-center">
-          <div class="offset-md-1 col-md-5 " data-aos="fade-right" data-aos-duration="500">
-            <div>
-              <h2 class=" fw-semibold">
-                We help startups convert their potential ideas into profitable realities.
-
-              </h2>
-              <p class="text-secondary ">GO Ahead to drive the era.</p>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <form id="form">
-
-              <div class="d-grid" data-aos="zoom-in-left" data-aos-duration="500">
-                <button class="btn btn-primary px-5 py-3"> Get Free Consultaion</button>
-              </div>
-            </form>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-
+    <!-- ======= Testimonial Section ======= -->
     <section class="Testimonial" id="Testimonial">
       <!-- Testimonial Start -->
       <div class="container-xxl py-5">
@@ -895,6 +1217,7 @@
                 <div class="d-flex align-items-center btn-square bg-white border rounded-circle">
                   <i class="fa fa-quote-right fa-2x text-primary"></i>
                 </div>
+                <!--edit here-->
                 Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
                 lorem magna ut et, nonumy et labore et tempor diam tempor erat.
               </div>
@@ -907,6 +1230,7 @@
                 <div class="d-flex align-items-center btn-square bg-white border rounded-circle">
                   <i class="fa fa-quote-right fa-2x text-primary"></i>
                 </div>
+                <!--edit here-->
                 Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
                 lorem magna ut et, nonumy et labore et tempor diam tempor erat.
               </div>
@@ -919,6 +1243,7 @@
                 <div class="d-flex align-items-center btn-square bg-white border rounded-circle">
                   <i class="fa fa-quote-right fa-2x text-primary"></i>
                 </div>
+                <!--edit here-->
                 Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
                 lorem magna ut et, nonumy et labore et tempor diam tempor erat.
               </div>
@@ -931,6 +1256,7 @@
                 <div class="d-flex align-items-center btn-square bg-white border rounded-circle">
                   <i class="fa fa-quote-right fa-2x text-primary"></i>
                 </div>
+                <!--edit here-->
                 Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
                 lorem magna ut et, nonumy et labore et tempor diam tempor erat.
               </div>
@@ -945,9 +1271,11 @@
         <!-- Testimonial End -->
 
     </section>
+    <!-- End Testimonial Section -->
+
 
     <!-- ======= statistics Section ======= -->
-    <section id="statistics" class="statistics">
+    <!-- <section id="statistics" class="statistics">
       <div class="overlay text-center ">
 
         <div class="container">
@@ -980,7 +1308,38 @@
           </div>
         </div>
       </div>
-    </section><!-- End statistics Section -->
+    </section> -->
+    <!-- End statistics Section -->
+
+
+    <!-- ======= consultation Section ======= -->
+    <section id="consultation">
+      <div class="container padding-medium">
+        <div class="row align-items-center">
+          <div class="offset-md-1 col-md-5 " data-aos="fade-right" data-aos-duration="500">
+            <div>
+              <!--edit here-->
+              <h2 class=" fw-semibold">
+                We help entities and startups convert their potential ideas into profitable realities.
+
+              </h2>
+              <!--edit here-->
+              <p class="text-secondary ">GO Ahead to drive the era.</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form id="form">
+
+              <div class="d-grid" data-aos="zoom-in-left" data-aos-duration="500">
+                <button class="btn btn-primary px-5 py-3"> Get Free Consultaion</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
 
     <!-- ======= Contact Section ======= -->
@@ -1067,18 +1426,10 @@
 
       </div>
 
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
 
-
-    <!-- <div class="share">
-      <span>Share</span>
-      <ul>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-google"></i></a>
-      </ul>
-    </div> -->
 
 
 
@@ -1119,16 +1470,11 @@
 
         </div>
 
-        <div class="col-sm-6 col-lg-4 d-flex justify-content-center" >
+        <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="social-links">
             <ul class="d-flex list-unstyled text-center">
-              <li class="me-2">
-                <a href="#">
-                  <i class="fa-brands fa-x-twitter fa-2x"></i>
-                </a>
-              </li>
               <li class="me-3">
-                <a href="#">
+                <a href="https://www.instagram.com/dtera.ae?igsh=MXdsbnNicmp1N3FuOQ==">
                   <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>
               </li>
@@ -1149,27 +1495,12 @@
       </div>
   </footer>
 
-  <!-- Floating Social Media bar Starts -->
-  <!-- <div class="social-media">
-    <div class="float-sm">
-      <div class="fl-fl float-rs">
-        <i class="fa-brands fa-instagram"></i>
-        <a href="" target="_blank">Follow via RSS</a>
-      </div>
-      <div class="fl-fl float-ig">
-        <<i class="fa-brands fa-instagram fa-2x"></i>
-        <a href="" target="_blank">Follow us!</a>
-      </div>
-      <div class="fl-fl float-pn">
-        <i class="fa fa-pinterest"></i>
-        <a href="" target="_blank">Follow us!</a>
-      </div>
-    </div>
-  </div> -->
-  <!-- Floating Social Media bar Ends -->
-
-
-
+  <!-- <nav class="socail-icons">
+    <ul>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i><span>Linkedin</span></a></li>
+    </ul>
+  </nav> -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -1183,6 +1514,10 @@
   <Script src="js/glightbox.min.js"></Script>
 
   <script src="js/owl.carousel.min.js"></script>
+
+  <!--language exchange-->
+
+
 
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1248,6 +1583,55 @@
     AOS.init();
 
   </script>
+
+  <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 4,
+      margin: 10,
+      autoplay: true,
+      autoplayHoverPause: true,
+
+      smartSpeed: 2000,
+      margin: 24,
+      dots: true,
+      loop: true,
+      nav: false,
+      pagination: true,
+      paginationNumbers: true,
+
+      responsive: {
+        0: {
+          items: 2
+        },
+        576: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 4
+        }
+      }
+
+
+    });
+    $('.play').on('click', function () {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+      owl.trigger('stop.owl.autoplay')
+    })
+  </script>
+
+  <script>
+    function changeURL() {
+      // Change the URL to a new page
+      window.location.href = 'indexAr.hrml';
+    }
+  </script>
+
 
 </body>
 
