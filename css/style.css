@@ -235,7 +235,7 @@ nav.navbar .navbar-brand img{
   .slider  img {
     position: absolute;
     right: 0%;
-    height: 50%;
+    height: 60%;
     opacity: 0;
     -webkit-transform: translateX(500px);
     transform: translateX(500px);
@@ -460,7 +460,7 @@ nav.navbar .navbar-brand img{
       display: none;
     }
     .slider-content{
-      padding: 0 20px;
+      padding: 0 35px;
       text-align: center;
     }
 
@@ -489,6 +489,11 @@ nav.navbar .navbar-brand img{
     align-content: center;
     width: 100%;
     justify-content: center;
+  }
+
+  /*services */
+  .ser-pan-sm{
+    margin-bottom: 420px;
   }
 
   }
@@ -818,7 +823,7 @@ section.Approach .options .d-flex .flex-shrink-0{
   margin-top: 10px;
 }
 .service{
-  margin-bottom: 55px;
+  margin-bottom: 100px;
 }
 
 .service .nav .nav-link {
@@ -893,12 +898,12 @@ section.Approach .options .d-flex .flex-shrink-0{
   background-color: #fff;
   border-radius: 15px !important;
   box-shadow: 2px 5px 25px rgba(0, 0, 0, .15);
-  padding: 25px;
-  padding-top: 50px;
+  padding: 15px;
   position: relative;
   z-index: 2;
   border: none;
   overflow: hidden;
+  height: 95%;
 
 }
 
@@ -948,7 +953,10 @@ section.Approach .options .d-flex .flex-shrink-0{
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 8px;
-  height: 100%;
+}
+
+.services .title-text h1{
+  margin-bottom: 100px;
 }
 
 
@@ -978,7 +986,7 @@ margin-bottom: 12px;
 
 .widget-49-date-primary img{
   object-fit: cover;
-  width: 60px;
+  width: 50px;
 }
 
 .widget-49-date-primary .widget-49-date-day {
@@ -1247,8 +1255,8 @@ text-transform: uppercase;
   font-weight: bold;
 }
 .ser-desc p{
-  margin-top: 15px;
-  font-size: 1.1rem;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
 
@@ -1294,6 +1302,16 @@ text-transform: uppercase;
   text-align: center;
   padding-top: 35px;
 }
+
+/*slider*/
+
+.clients .owl-carousel .item{
+padding: 0 30px;
+}
+
+
+
+
 
 .clients h1{
   color: white;
@@ -2093,65 +2111,68 @@ footer .navbar-nav li a:hover{
 
 /* Floating Social Media Bar Style Starts Here */
 
-.social-media .fl-fl {
-  background: #6d006f;
-  text-transform: uppercase;
-  padding: 2px;
-  width: 190px;
+/* .socail-icons{
   position: fixed;
-  right: -155px;
-  z-index: 1000;
-  font: normal normal 10px Arial;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
+  width: 70px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
 }
-
-.social-media .fa {
-  font-size: 20px;
-  color: #fff;
-  padding: 10px 0;
-  width: 40px;
-  margin-left: 8px;
+.socail-icons li{
+  height: 60px;
+  position:relative;
 }
-
-.social-media .fl-fl:hover {
-  right: 0;
+.socail-icons li a{
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left:25%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all .3s linear;
 }
-
-.social-media .fl-fl a {
-  color: #fff !important;
-  text-decoration: none;
-  text-align: center;
-  line-height: 43px!important;
-  vertical-align: top!important;
+.socail-icons li:nth-child(1) a{
+  background: #4267B2;
 }
-
-.social-media .float-fb {
-  top: 160px;
+.socail-icons li:nth-child(2) a{
+  background: #1DA1F2;
 }
-
-.social-media .float-tw {
-  top: 215px;
+.socail-icons li:nth-child(3) a{
+  background: #E1306C;
 }
-
-.social-media .float-gp {
-  top: 270px;
+.socail-icons li:nth-child(4) a{
+  background: #2867B2;
 }
-
-.social-media .float-rs {
-  top: 325px;
+.socail-icons li:nth-child(5) a{
+  background: #333;
 }
-
-.social-media .float-ig {
-  top: 380px;
+.socail-icons li:nth-child(6) a{
+  background: #ff0000;
 }
-
-.social-media .float-pn {
-  top: 435px;
+.socail-icons li a i{
+  position:absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
 }
+.socail-icons ul li a span{
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.socail-icons a:hover {
+  z-index:1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+}
+.socail-icons ul li:hover a span{
+  padding-left: 30%;
+  display: block;
+}
+  */
 /* Floating Social Media Bar Style Ends Here */
 
 
@@ -2236,6 +2257,7 @@ footer .navbar-nav li a:hover{
     width: 65%;
   }
 
+ 
   .clients .title-text h1{
     margin-bottom: 30px !important;
   }
@@ -2308,4 +2330,113 @@ footer .navbar-nav li a:hover{
 
  
 
+}
+
+
+
+
+/* swith language */
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 7px 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #8e36c1;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #8e36c1;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: #8e36c1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #8e36c1;
+  
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
 }
