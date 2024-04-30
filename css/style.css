@@ -535,17 +535,17 @@ nav.navbar .navbar-brand img {
 
   /*about*/
 
-  .about h1{
+  .about h1 {
     line-height: 3rem;
   }
 
   /* apprach */
-  section.Approach .options .d-flex h5{
+  section.Approach .options .d-flex h5 {
     font-size: 24px !important;
   }
 
   /*portofolio */
-  .portfolio #portfolio-flters li{
+  .portfolio #portfolio-flters li {
     padding: 8px 10px 8px 10px !important;
   }
 }
@@ -860,11 +860,11 @@ section.Approach .options .d-flex .flex-shrink-0 {
 
 /*** Service ***/
 
-.tab-content > .tab-pane:not(.active) {
+.tab-content>.tab-pane:not(.active) {
   display: block;
   height: 0;
   overflow-y: hidden;
-} 
+}
 
 .service .tab-content {
   position: relative;
@@ -1666,7 +1666,7 @@ section.Approach .options .d-flex .flex-shrink-0 {
   border-right: none;
 }
 
-.d-lg-block{
+.d-lg-block {
   margin-left: 15px;
 }
 
@@ -2170,9 +2170,10 @@ footer .navbar-nav li a:hover {
   border-color: white;
 }
 
-footer .copyright{
+footer .copyright {
   margin-bottom: 10px;
 }
+
 footer .copyright p {
   font-size: 15px;
   color: #f0f0f0;
@@ -2409,11 +2410,94 @@ footer .copyright p {
 
 }
 
+@media only screen and (max-width: 1200px) {
+
+  .slider{
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav.navbar .navbar-brand img{
+    width: 235px !important;
+  }
+
+  .slider img {
+    display: none;
+  }
+
+  .slider-content{
+    padding-left: 0;
+    padding-right: 0 !important;
+  }
+
+  .slider-pagination {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    bottom: 170px;
+    right: 0 !important;
+    
+    }
+
+    .slider h2{
+      font-size: 3.5rem;
+    }
+
+    .slider h4{
+      font-size: 1.5rem;
+    }
+
+    section.Approach .options .d-flex h5{
+      font-size: 24px;
+    }
+
+    nav.navbar .navbar-brand img {
+      width: 150px;
+      padding: 0 5px;
+    }
+  
+    .navbar-toggler {
+      left: 0;
+      outline: none !important;
+    }
+  
+    nav.navbar .noTransparrent {
+      background-color: #fff;
+      border: 1px solid #eee;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus {
+      border-color: rgb(234, 46, 73);
+      background-color: rgba(44, 45, 47, 0);
+      color: #2a2a2a;
+    }
+  
+    .navbar-nav li a {
+      color: #2a2a2a;
+    }
+  
+    .contact {
+      text-align: center;
+    }
+  
+
+
+
+}
+
+
+
 
 
 
 /* swith language */
-.lang{
+.lang {
   background: transparent;
   border: none;
 }
