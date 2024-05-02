@@ -70,7 +70,7 @@ nav.navbar {
 
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
-  border-color: rgb(234, 46, 73);
+  border-color: #fff;
   background-color: rgba(44, 45, 47, 0);
   color: white;
 }
@@ -313,9 +313,13 @@ nav.navbar .navbar-brand img {
 .slider img {
   -webkit-transition: opacity 800ms, -webkit-transform 800ms;
   transition: transform 800ms, opacity 800ms;
-  -webkit-transition-delay: 1.2s;
+  -webkit-transition-delay: 0.1s;
   /* Safari */
-  transition-delay: 1.2s;
+  transition-delay: 0.1s;
+
+  /* opacity: 1.0;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
 }
 
 .buy-now-btn {
@@ -2146,8 +2150,8 @@ footer .navbar-nav li a {
 }
 
 
-.footer-menu li {
-  font-size: 20px;
+.footer-menu li a{
+  font-size: 18px;
 
 }
 
@@ -2410,7 +2414,8 @@ footer .copyright p {
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media (min-width:601px) and (max-width:1200px) {
+
 
   .slider{
     justify-content: center;
@@ -2425,10 +2430,10 @@ footer .copyright p {
     display: none;
   }
 
-  .slider-content{
+  /* .slider-content{
     padding-left: 0;
     padding-right: 0 !important;
-  }
+  } */
 
   .slider-pagination {
     align-items: center;
