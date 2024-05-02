@@ -525,9 +525,11 @@ nav.navbar .navbar-brand img {
 
   }
 
-  .slider h2 {
-    font-size: 30px;
+    .slider h2 {
+    font-size: 38px;
+    font-weight: 600;
   }
+
 
   .slider-pagination {
     align-items: center;
