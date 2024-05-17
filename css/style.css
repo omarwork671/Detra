@@ -38,7 +38,7 @@ body {
 }
 
 header {
-  background-image: url("../images/bg/DTERA\ BG\ .png");
+  background-image: url("../images/bg/tinywow_DTERA\ BG\ _56072424.webp");
   min-height: 100vh !important;
   background-size: cover;
   background-position: center;
@@ -518,18 +518,17 @@ nav.navbar .navbar-brand img {
   }
 
   header {
-    background-image: url("../images/bg/DTERA\ BG\ .png");
+    background-image: url("../images/bg/tinywow_DTERA\ BG\ _56072424.webp");
     min-height: 100vh !important;
     background-size: cover;
     background-position: center;
 
   }
 
-    .slider h2 {
+  .slider h2 {
     font-size: 38px;
     font-weight: 600;
   }
-
 
   .slider-pagination {
     align-items: center;
@@ -547,12 +546,12 @@ nav.navbar .navbar-brand img {
 
   /* apprach */
   section.Approach .options .d-flex h5 {
-    font-size: 24px !important;
+    font-size: 21px !important;
   }
 
   /*portofolio */
   .portfolio #portfolio-flters li {
-    padding: 8px 10px 8px 10px !important;
+    padding: 8px 8px 8px 8px !important;
   }
 }
 
@@ -1474,7 +1473,7 @@ section.Approach .options .d-flex .flex-shrink-0 {
   border-radius: 60px;
 }
 
-#consultation button {
+#consultation a {
   border-radius: 60px;
   background-color: #fff !important;
   outline: none;
@@ -1484,7 +1483,7 @@ section.Approach .options .d-flex .flex-shrink-0 {
   font-size: 1.3rem;
 }
 
-#consultation button:hover {
+#consultation a:hover {
   background-color: transparent !important;
   border: 3px #fff solid !important;
   color: #fff;
@@ -1946,12 +1945,19 @@ section.Approach .options .d-flex .flex-shrink-0 {
   color: #444444;
   background: #fafbff;
   padding: 30px;
+  height: 100%;
 }
 
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
   color: #6d006f;
+}
+
+.contact .info-box a {
+  text-decoration: none;
+  color: #444444;
+
 }
 
 .contact .info-box h3 {
@@ -2152,7 +2158,7 @@ footer .navbar-nav li a {
 }
 
 
-.footer-menu li a{
+.footer-menu li a {
   font-size: 18px;
 
 }
@@ -2273,6 +2279,27 @@ footer .copyright p {
     margin-bottom: 0;
   }
 
+  nav.navbar .noTransparrent {
+    top: 0;
+    left: 20px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0px 15px 15px;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li a:focus {
+    border-color: transparent;
+    background-color: rgb(142 22 109);
+    color: #ffffff;
+}
+  .navbar-nav li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #2a2a2a;
+  }
 
 
   /*header*/
@@ -2405,6 +2432,11 @@ footer .copyright p {
   }
 
 
+  .contact .info-box {
+    padding: 28px;
+  }
+
+
   /*footor */
 
   .social-links {
@@ -2419,12 +2451,12 @@ footer .copyright p {
 @media (min-width:601px) and (max-width:1200px) {
 
 
-  .slider{
+  .slider {
     justify-content: center;
     text-align: center;
   }
 
-  nav.navbar .navbar-brand img{
+  nav.navbar .navbar-brand img {
     width: 235px !important;
   }
 
@@ -2446,53 +2478,53 @@ footer .copyright p {
     left: 0;
     bottom: 170px;
     right: 0 !important;
-    
-    }
 
-    .slider h2{
-      font-size: 3.5rem;
-    }
+  }
 
-    .slider h4{
-      font-size: 1.5rem;
-    }
+  .slider h2 {
+    font-size: 3.5rem;
+  }
 
-    section.Approach .options .d-flex h5{
-      font-size: 24px;
-    }
+  .slider h4 {
+    font-size: 1.5rem;
+  }
 
-    nav.navbar .navbar-brand img {
-      width: 150px;
-      padding: 0 5px;
-    }
-  
-    .navbar-toggler {
-      left: 0;
-      outline: none !important;
-    }
-  
-    nav.navbar .noTransparrent {
-      background-color: #fff;
-      border: 1px solid #eee;
-      text-align: center;
-      padding: 15px;
-    }
-  
-    .navbar-nav li a:hover,
-    .navbar-nav li a:focus {
-      border-color: rgb(234, 46, 73);
-      background-color: rgba(44, 45, 47, 0);
-      color: #2a2a2a;
-    }
-  
-    .navbar-nav li a {
-      color: #2a2a2a;
-    }
-  
-    .contact {
-      text-align: center;
-    }
-  
+  section.Approach .options .d-flex h5 {
+    font-size: 24px;
+  }
+
+  nav.navbar .navbar-brand img {
+    width: 150px;
+    padding: 0 5px;
+  }
+
+  .navbar-toggler {
+    left: 0;
+    outline: none !important;
+  }
+
+  nav.navbar .noTransparrent {
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    border-color: rgb(234, 46, 73);
+    background-color: rgba(44, 45, 47, 0);
+    color: #2a2a2a;
+  }
+
+  .navbar-nav li a {
+    color: #2a2a2a;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
 
 
 
