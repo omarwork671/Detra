@@ -93,34 +93,36 @@ const swiper = new Swiper('.swiper', {
 
 
 
-/* Porfolio isotope and filter
-*/
-$('.portfolio-container'). isotope({
-  itemSelector: '.portfolio-item',
-  layoutMode: 'fitRows'
-});
-$('.portfolio ul li').click(function(){
-  $('.portfolio ul li').removeClass('filter-active');
-  $(this).addClass('filter-active');
+$(window).on('load',function () {
+  // this will fire after the entire page is loaded, including images
 
-  var selector = $(this).attr('data-filter');
+  /* Porfolio isotope and filter
+  */
   $('.portfolio-container').isotope({
-    filter:selector
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
   });
-  return false;
-});
+  $('.portfolio ul li').click(function () {
+    $('.portfolio ul li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-container').isotope({
+      filter: selector
+    });
+    return false;
+  });
 
 
 
+  /**
+  * Initiate portfolio lightbox 
+  */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfokio-lightbox'
+  });
 
 
-
-
-/**
-* Initiate portfolio lightbox 
-*/
-const portfolioLightbox = GLightbox({
- selector: '.portfokio-lightbox'
 });
 
 
